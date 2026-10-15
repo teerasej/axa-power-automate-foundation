@@ -1,0 +1,13 @@
+Subject: [TRAINING] Information request for weekly report
+
+Body:
+Hello,
+
+Please provide:
+This information is for the weekly report.
+If it is not ready, please tell me the expected delivery date.
+
+Thank you.
+This is a training message.
+
+After pasting Body, insert one space and the RequestedItem Dynamic content token after Please provide:. Do not paste this instruction into the email.

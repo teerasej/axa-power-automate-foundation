@@ -1,0 +1,18 @@
+Help me review a fictional beginner Power Automate flow.
+The flow has Manually trigger a flow with Text input RequestedItem,
+then Office 365 Outlook Send an email (V2) to my own work mailbox.
+CC/BCC are empty.
+
+Goal: use the item I enter at run time in the email request.
+Input A: List of outstanding tasks
+Input B: Expected completion date
+Observed in this fictional example: both emails say
+Please provide: List of outstanding tasks
+The Body contains that fixed text and has no RequestedItem token.
+The fictional runs are marked Succeeded.
+
+Explain why a successful run can still give the wrong business result.
+Suggest the smallest correction within the existing two-step flow.
+Do not add connectors, actions, expressions, permissions or AI inside the flow.
+Give a Predict, Try, Check test and say what actual evidence would confirm it.
+Use only this synthetic context and distinguish it from a real verified repair.
