@@ -11,3 +11,15 @@
 .vp-doc a.challenge-back { display:inline-flex; align-items:center; min-height:44px; padding:8px 14px; margin:0 0 20px; border:1px solid var(--vp-c-divider); border-radius:8px; background:var(--vp-c-bg-soft); color:var(--vp-c-brand-1); font-size:14px; font-weight:600; line-height:1.5; text-decoration:none; }
 .vp-doc a.challenge-back:hover { border-color:var(--vp-c-brand-1); background:var(--vp-c-brand-soft); }
 .vp-doc a.challenge-back:focus-visible { outline:2px solid var(--vp-c-brand-1); outline-offset:3px; }
+
+.course-credits { margin-top:40px; padding:24px 0 8px; border-top:1px solid var(--vp-c-divider); color:var(--vp-c-text-2); font-size:14px; line-height:1.7; }
+.course-credits p { margin:0 0 10px; overflow-wrap:break-word; }
+.course-credits-notice { font-size:14px; }
+.course-credits nav { display:flex; flex-wrap:wrap; align-items:center; gap:4px 12px; }
+.course-credits a { display:inline-flex; align-items:center; min-height:44px; color:var(--vp-c-brand-1); text-decoration:underline; text-underline-offset:3px; }
+.course-credits a:focus-visible { outline:2px solid var(--vp-c-brand-1); outline-offset:4px; border-radius:2px; }
+
+@media (max-width:359px) {
+  .VPNavBarTitle .title { font-size:14px; line-height:1.25; }
+  .VPNavBarTitle .title > span { max-width:168px; white-space:normal; }
+}

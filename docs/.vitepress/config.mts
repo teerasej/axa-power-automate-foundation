@@ -80,9 +80,6 @@ export default withMermaid(defineConfig({
     "outline": [
       2,
       3
-    ],
-    "footer": {
-      "message": "Practice with fictional information. Check results before using any automation at work."
-    }
+    ]
   }
 }))
