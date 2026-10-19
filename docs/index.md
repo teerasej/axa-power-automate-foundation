@@ -4,9 +4,17 @@ next:
   text: Get ready
   link: /preparation
 ---
-# Make everyday work easier
+<section class="course-hero" aria-labelledby="make-everyday-work-easier">
+
+<div class="course-hero-art">
 
 ![Employees learn through group mapping, individual building and checking results.](/images/course-home.png)
+
+</div>
+
+<div class="course-hero-content">
+
+# Make everyday work easier
 
 **Power Automate Foundation · Beginner exercises**
 
@@ -19,6 +27,10 @@ Find one repetitive task, explore a workflow with your group, then build and che
 [Download slides (PDF)](/downloads/AXA-Batch3-Foundation-Training.pdf)
 
 </div>
+
+</div>
+
+</section>
 
 ## Your learning day
 

@@ -9,13 +9,25 @@ next:
 
 <span id="exercise-4-·-review-with-ai"></span>
 
-# Exercise 4 · Design a simple flow with AI
+<section class="course-hero exercise-hero" aria-labelledby="exercise-4-·-design-a-simple-flow-with-ai">
+
+<div class="course-hero-art">
 
 ![Colleagues discuss AI advice and check it against a checklist.](/images/ai-review.png)
+
+</div>
+
+<div class="course-hero-content">
+
+# Exercise 4 · Design a simple flow with AI
 
 ## Goal
 
 Turn a fictional workplace scenario into **one Trigger and two or three Actions** with help from AI. Think of it as writing a recipe before cooking: a clear plan is useful, but it is not proof that the result works.
+
+</div>
+
+</section>
 
 **Design only:** finish with a text diagram, build guidance and a fictional walkthrough. Do not create or run this flow, or change your Exercise 3 flow.
 

@@ -7,12 +7,24 @@ next:
   link: /exercises/03-build-information-request
 ---
 
-# Exercise 2 · Play the Flow-card challenges
+<section class="course-hero exercise-hero" aria-labelledby="exercise-2-·-play-the-flow-card-challenges">
+
+<div class="course-hero-art">
 
 ![A group arranges several paper workflow sequences and discusses their results.](/images/flow-card-challenges.png)
 
+</div>
+
+<div class="course-hero-content">
+
+# Exercise 2 · Play the Flow-card challenges
+
 ## Goal
 Compose a flow with the supplied cards and explain how it reaches the normal outcome in your chosen challenge’s **Checkpoint**.
+
+</div>
+
+</section>
 
 ## What you need
 A complete usable supplied card set per group, flipchart and post-its. No software account, paid licence or printed worksheet.

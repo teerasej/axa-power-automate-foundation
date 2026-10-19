@@ -39,12 +39,30 @@ html, body { overflow-x:clip; }
 .flow-field-token { padding:.15rem .5rem; border:1px solid var(--vp-c-brand-1); border-radius:4px; background:var(--vp-c-brand-soft); color:var(--vp-c-brand-1); overflow-wrap:anywhere; }
 .flow-field-reference p { margin:.75rem 0 0; font-size:.9rem; }
 
-.course-hero-actions p { display:flex; flex-wrap:wrap; gap:12px; margin:1.5rem 0 2rem; }
-.vp-doc .course-hero-actions a { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 18px; border:1px solid var(--vp-c-divider); border-radius:8px; background:var(--vp-c-bg-soft); color:var(--vp-c-text-1); font-weight:600; text-decoration:none; text-align:center; }
-.vp-doc .course-hero-actions a:first-child { background:var(--vp-c-brand-1); border-color:var(--vp-c-brand-1); color:var(--vp-c-bg); }
-.vp-doc .course-hero-actions a:hover { border-color:var(--vp-c-brand-1); }
-.vp-doc .course-hero-actions a:focus-visible { outline:2px solid var(--vp-c-brand-1); outline-offset:3px; }
-@media (max-width:480px) {
-  .course-hero-actions p { flex-direction:column; }
-  .vp-doc .course-hero-actions a { width:100%; }
+.course-hero { position:relative; isolation:isolate; container-type:inline-size; overflow:hidden; border:1px solid #ded9ce; border-radius:20px; background:#faf6ed; color:#253d57; box-shadow:0 12px 36px rgb(0 0 0 / .08); }
+.course-hero-art { position:absolute; inset:0; z-index:-2; }
+.course-hero-art p { height:100%; margin:0; }
+.vp-doc .course-hero-art img { width:100%; height:100%; margin:0; border-radius:0; object-fit:cover; object-position:65% center; }
+.course-hero::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#faf6ed 0%,rgb(250 246 237 / .98) 35%,rgb(250 246 237 / .9) 52%,rgb(250 246 237 / .15) 82%); }
+.course-hero-content { position:relative; width:64%; padding:44px 28px; }
+.vp-doc .course-hero h1 { margin:0 0 20px; color:#253d57; font-size:clamp(2rem,5.7cqi,2.75rem); line-height:1.08; font-weight:700; letter-spacing:-.035em; text-wrap:balance; }
+.course-hero-content > p { margin:0 0 20px; font-size:16px; line-height:1.65; }
+.course-hero-content > p:first-of-type { color:#6d4b35; font-size:13px; line-height:1.6; letter-spacing:.045em; }
+.course-hero-actions p { display:flex; flex-direction:column; align-items:stretch; gap:10px; margin:28px 0 0; }
+.vp-doc .course-hero-actions a { display:flex; align-items:center; justify-content:flex-start; min-height:48px; padding:12px 18px; border:1px solid #c9cdd0; border-radius:9px; background:rgb(255 255 255 / .9); color:#253d57; font-size:14px; font-weight:600; line-height:1.5; text-decoration:none; transition:background-color .15s,border-color .15s; }
+.vp-doc .course-hero-actions a:first-child { background:#184b78; border-color:#184b78; color:#fff; }
+.vp-doc .course-hero-actions a:hover { background:#e5edf4; border-color:#184b78; }
+.vp-doc .course-hero-actions a:first-child:hover { background:#123c62; }
+.vp-doc .course-hero-actions a:focus-visible { outline:3px solid #184b78; outline-offset:3px; }
+.exercise-hero { margin-bottom:28px; }
+.exercise-hero .course-hero-content { min-height:420px; width:68%; display:flex; flex-direction:column; justify-content:center; }
+.vp-doc .exercise-hero h1 { font-size:clamp(1.9rem,5.2cqi,2.5rem); }
+.vp-doc .exercise-hero h2 { margin:8px 0 12px; padding:0; border:0; color:#6d4b35; font-size:14px; line-height:1.5; letter-spacing:.08em; text-transform:uppercase; }
+.exercise-hero .course-hero-content > p:first-of-type { margin:0; color:#253d57; font-size:16px; line-height:1.65; letter-spacing:normal; }
+@container (max-width:560px) {
+  .course-hero-content { width:100%; padding:180px 24px 28px; }
+  .exercise-hero .course-hero-content { width:100%; min-height:0; justify-content:flex-start; }
+  .course-hero::before { background:linear-gradient(180deg,rgb(250 246 237 / .03) 0%,rgb(250 246 237 / .35) 100px,#faf6ed 210px); }
+  .vp-doc .course-hero-art img { object-fit:contain; object-position:center top; }
+  .vp-doc .course-hero h1 { font-size:clamp(1.9rem,8.4cqi,2.5rem); }
 }

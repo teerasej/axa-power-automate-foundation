@@ -7,12 +7,24 @@ next:
   link: /exercises/02-arrange-flow-cards
 ---
 
-# Exercise 1 · Find a bottleneck
+<section class="course-hero exercise-hero" aria-labelledby="exercise-1-·-find-a-bottleneck">
+
+<div class="course-hero-art">
 
 ![Colleagues discuss a training-request process on a flipchart.](/images/find-bottleneck.png)
 
+</div>
+
+<div class="course-hero-content">
+
+# Exercise 1 · Find a bottleneck
+
 ## Goal
 Map a training request, match its business roles and choose one small improvement with a human checkpoint.
+
+</div>
+
+</section>
 
 ## What you need
 Flipchart, post-its and markers. No software account or paid licence.

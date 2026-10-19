@@ -7,15 +7,27 @@ next:
   link: /exercises/04-ai-coaching
 ---
 
-# Exercise 3 · Build an email flow
+<section class="course-hero exercise-hero" aria-labelledby="exercise-3-·-build-an-email-flow">
+
+<div class="course-hero-art">
 
 ![A learner runs a simple flow with one input and one email output.](/images/email-flow.png)
 
+</div>
+
+<div class="course-hero-content">
+
+# Exercise 3 · Build an email flow
+
 ## Goal
 
-In the morning, your group mapped a training request and looked for repeated work. Now apply the same method to a separate weekly-report scenario: build a reusable request email with one blank for missing information. You decide what to request and check the recipient before running it.
+Build a two-step flow, then receive two emails that match two different inputs. Use fictional information and send both emails to your own work mailbox for practice.
 
-**Goal:** Build a two-step flow, then receive two emails that match two different inputs. Use fictional information and send both emails to your own work mailbox for practice.
+</div>
+
+</section>
+
+In the morning, your group mapped a training request and looked for repeated work. Now apply the same method to a separate weekly-report scenario: build a reusable request email with one blank for missing information. You decide what to request and check the recipient before running it.
 
 > **License:** This lab uses the Standard Office 365 Outlook connector. Power Automate cloud-flow entitlement, Exchange Online mailbox access and organisational permissions must be confirmed before training. The design requires no Premium connector or paid Copilot add-on.
 
