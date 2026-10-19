@@ -149,6 +149,8 @@ Two received emails match the two inputs. Explain where the token gets its value
 
 ### Optional Practice 4 · Create a follow-up task
 
+![A learner reviews an email leading to a new personal follow-up task with an unchecked box.](/images/practice-03-04-follow-up-task.png)
+
 Reuse your input to create a personal task after sending the request email.
 
 **Start only after Tests A and B succeed**, if time remains and your Microsoft To Do access is ready. Skipping this practice does not affect completion of Exercise 3 or access to Exercise 4.
