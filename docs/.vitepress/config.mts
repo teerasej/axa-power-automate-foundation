@@ -51,7 +51,7 @@ export default withMermaid(defineConfig({
             "link": "/exercises/03-build-information-request"
           },
           {
-            "text": "4 \u00b7 Review with AI",
+            "text": "4 \u00b7 Design a simple flow with AI",
             "link": "/exercises/04-ai-coaching"
           }
         ]
@@ -68,7 +68,7 @@ export default withMermaid(defineConfig({
             "link": "/resources/downloads"
           },
           {
-            "text": "AI fallback review",
+            "text": "AI design fallback",
             "link": "/resources/fallback"
           }
         ]

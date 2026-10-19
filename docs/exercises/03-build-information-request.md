@@ -13,11 +13,9 @@ next:
 
 ## Goal
 
-In the morning, your group mapped how a coordinator follows up on missing weekly-report information. Now reduce the repeated typing: build a reusable request email with one blank for the missing item. You decide what to request and check the recipient before running it.
+In the morning, your group mapped a training request and looked for repeated work. Now apply the same method to a separate weekly-report scenario: build a reusable request email with one blank for missing information. You decide what to request and check the recipient before running it.
 
 **Goal:** Build a two-step flow, then receive two emails that match two different inputs. Use fictional information and send both emails to your own work mailbox for practice.
-
-**Time:** 13:00–14:30. Each person uses their own organisational work account and work mailbox.
 
 > **License:** This lab uses the Standard Office 365 Outlook connector. Power Automate cloud-flow entitlement, Exchange Online mailbox access and organisational permissions must be confirmed before training. The design requires no Premium connector or paid Copilot add-on.
 
@@ -32,41 +30,40 @@ flowchart TD
 
 ## Steps
 
-### Orientation and demonstration — 13:00–13:20
+### Orientation and demonstration
 
-Use ten minutes to open Power Automate and Outlook and check identity/environment with the instructor. Watch a ten-minute demonstration. The input is the value supplied at run time; Dynamic content passes that value into the email. Save stores the instructions; Run sends a real practice email.
+Open Power Automate and Outlook, then check your identity and environment with the instructor. Watch the demonstration before you build. The input is the value supplied at run time; Dynamic content passes that value into the email. Save stores the instructions; Run sends a real practice email.
 
-### Practice 1: Create the manual trigger — 13:20–13:35
+### Practice 1: Create the manual trigger
+
+![A learner checks a simple manual trigger with one input.](/images/practice-03-01-manual-trigger.webp)
 
 **Primary target:** Create a manual trigger with one required Text input for the missing report item.
 
-1. Open Power Automate with your work account and check the organiser-approved environment:
-
-   ```text
-   https://make.powerautomate.com
-   ```
-
-2. Select **Create** → **Instant cloud flow**. Enter this **Flow name**:
+1. Open [Power Automate](https://make.powerautomate.com) with your work account and check the organiser-approved environment.
+2. Select **Create** → **Instant cloud flow**.
+3. In **Flow name**, enter:
 
    ```text
    B3-MyInformationRequest
    ```
 
-3. Select **Manually trigger a flow**, then **Create**.
-4. Select the trigger card. In **Parameters**, select **Add an input** → **Text**. Change the input name from Text to:
+4. Select **Manually trigger a flow**, then **Create**.
+5. Select the trigger card. In **Parameters**, select **Add an input** → **Text**. Change the input name from Text to:
 
    ```text
    RequestedItem
    ```
 
-5. Check the input menu. If it offers **Make the field optional**, the input is currently required. If it offers **Make the field required**, select that option. Ask the instructor if your menu differs.
 6. Stay in the same designer and continue to Practice 2. Add the email action before saving the complete flow.
 
 #### Check your result
 
 The trigger has exactly one Text input named RequestedItem, set as required. You can explain what a person will enter when they run it.
 
-### Practice 2: Configure the email with Dynamic content — 13:35–13:50
+### Practice 2: Configure the email with Dynamic content
+
+![A learner inserts one highlighted token into a reusable email.](/images/practice-03-02-email-token.webp)
 
 **Primary target:** Configure and save an email action that uses the trigger's input in its request line.
 
@@ -98,7 +95,7 @@ The trigger has exactly one Text input named RequestedItem, set as required. You
    ```
 
 6. Click immediately after `Please provide:` in **Body** and type one space.
-7. Open **Dynamic content** using the lightning button. Alternatively, type `/` and select **Insert dynamic content** if your designer offers it.
+7. Click inside **Body**. Select the blue lightning-bolt button (**⚡**, **Insert dynamic content**) beside the field. If the button is not visible, type `/` in the field and select **Insert dynamic content**.
 8. Search for and select `RequestedItem` under **Manually trigger a flow**. Keep the surrounding email text unchanged.
 9. Check that the request line contains one inserted token. Do not type the word RequestedItem or a sample requested item into that blank. Keep one trigger and one email action, with no attachments or changed From.
 10. Select **Save** and resolve any reported issue before testing.
@@ -109,11 +106,13 @@ The trigger has exactly one Text input named RequestedItem, set as required. You
 
 The flow saves with your own work email in To, CC/BCC empty and the RequestedItem token after “Please provide:”. The coordinator still chooses the item and checks the recipient.
 
-### Practice 3: Test and compare two results — 13:50–14:20
+### Practice 3: Test and compare two results
+
+![A learner compares two emails with different input results.](/images/practice-03-03-compare-tests.webp)
 
 **Primary target:** Verify that changing the run-time input changes the received request without editing the email action.
 
-#### Test A — 13:50–14:05
+#### Test A
 
 1. Predict one email to yourself with this requested item:
 
@@ -131,7 +130,7 @@ The flow saves with your own work email in To, CC/BCC empty and the RequestedIte
 
 Run history and a received email support the result for input A. If you only watched a demonstration, record that you have not run your own flow.
 
-#### Test B — 14:05–14:20
+#### Test B
 
 1. Predict that the recipient, subject and surrounding message stay the same.
 2. Test again with this `RequestedItem`:
@@ -148,9 +147,63 @@ Run history and a received email support the result for input A. If you only wat
 
 Two received emails match the two inputs. Explain where the token gets its value and where that value appears.
 
-## Support and recap — 14:20–14:30
+### Optional Practice 4 · Create a follow-up task
 
-Help a partner identify checkpoints if you finish early. Do not add connectors or features. This flow does not identify missing information, read replies or prevent duplicates; each run can send another email. After the break, AI can help explain a question, while you remain responsible for checking the result.
+Reuse your input to create a personal task after sending the request email.
+
+**Start only after Tests A and B succeed**, if time remains and your Microsoft To Do access is ready. Skipping this practice does not affect completion of Exercise 3 or access to Exercise 4.
+
+1. Open Microsoft To Do with your own organisational account. Select **New list** and name your personal practice list:
+
+   ```text
+   B3 Practice
+   ```
+
+2. Return to your existing flow. Select **+** after **Send an email (V2)** → **Add an action**. Search for:
+
+   ```text
+   Add a to-do (V3)
+   ```
+
+3. Select this Action under **Microsoft To-Do (Business)**. Use your own approved connection. If access is blocked or your list is unavailable, stop and ask the instructor/TA; keep the completed email exercise as your result.
+4. In **To-do List**, select **B3 Practice**. In **Title**, type:
+
+   ```text
+   Follow up:
+   ```
+
+5. Add one space after the colon, then insert **RequestedItem** from **Manually trigger a flow** using Dynamic content. Do not type the token name or a sample item as fixed text.
+
+<div class="flow-field-reference" aria-label="To Do Title field reference">
+  <div class="flow-field-label">Title</div>
+  <div class="flow-field-value"><span class="flow-field-literal">Follow up: </span><span class="flow-field-token" aria-label="Inserted Dynamic content token: RequestedItem">RequestedItem</span></div>
+  <p>Type <strong>Follow up:</strong> and one space. Insert the highlighted token from the manual trigger.</p>
+</div>
+
+6. Leave dates, reminders and other optional fields unset. Keep the email recipient and content unchanged. Your flow now has one Trigger and two Actions: **manual start → send email → create task**.
+7. Select **Save**. Predict one additional email and one matching task, then run once with:
+
+   ```text
+   Expected completion date
+   ```
+
+8. Check the new run in **Run history**, the received email and **B3 Practice** in Microsoft To Do. The task title should be:
+
+   ```text
+   Follow up: Expected completion date
+   ```
+
+9. Record this optional test separately from Tests A and B. If a task is missing, inspect the To Do Action before retrying: the email may already have been sent.
+
+**Check your result:** The new run shows both Actions succeeded, and you can show the matching email and follow-up task. Explain how the same input supplies both outputs.
+
+Each run creates another email and task. The flow does not detect replies or complete tasks automatically. No due date or reminder is configured in this practice. You can manually complete or delete your fictional practice task afterward.
+
+> **Access:** Microsoft To-Do (Business) is a Standard connector, but your account, service access and organisational permissions still need confirmation. Do not buy access or change policies. See the [Microsoft connector reference](https://learn.microsoft.com/en-us/connectors/todo/#add-a-to-do-v3).
+
+## Support and recap
+
+After Tests A and B, try only the optional To Do practice above if access and time allow, or help a partner identify checkpoints. Do not add other features. The flow does not identify missing information, read replies or prevent duplicates. After the break, Exercise 4 uses AI to design a separate simple flow with fictional information; you will not build or run that design.
 
 
 ::: details Help: different controls, wrong text or missing email

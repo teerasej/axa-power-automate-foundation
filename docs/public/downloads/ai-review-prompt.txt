@@ -1,20 +1,50 @@
-Act as a patient Power Automate learning coach for a beginner.
-Review only this two-step training flow:
-Manually trigger a flow with required Text input RequestedItem,
-then Office 365 Outlook Send an email (V2) to my own work mailbox.
-CC/BCC are empty. Use fictional information only.
+EXERCISE 4 - DESIGN A SIMPLE FLOW WITH AI
 
-Goal: [the requested result]
-Current steps: [what I can actually see]
-Input: [synthetic input]
-Expected email: [expected request line]
-Observed result and run status: [observed evidence, or not yet run]
-Question: [one thing I want to understand]
+Design only: do not build or run the flow.
 
-Separate observed facts from assumptions. Ask if evidence is missing.
-Explain one likely check in plain English and suggest the smallest change.
-Do not add actions, connectors, loops, expressions, permissions or AI inside the flow.
-Do not ask for private messages, credentials, raw run data or private URLs.
-Give a Predict, Try, Check test using the existing input.
-If the flow already works, explain when no change is needed.
-Do not claim the issue is fixed until I verify the run and received email.
+1. Paste the coach setup prompt into a new approved AI chat:
+
+Act as a patient Power Automate coach for a beginner.
+Use plain English and fictional information only.
+I am designing today, not building or running a flow.
+
+For my next scenario:
+- Propose exactly one Trigger and two or three Actions.
+- Name the app and the Power Automate step for each.
+- Keep one straight path: no branches, loops, approvals,
+  Premium connectors, expressions or AI actions.
+- Explain what information each step needs and where it comes from.
+- State assumptions and access requirements. Ask a short question
+  if essential information is missing; do not invent access.
+- Show a narrow vertical diagram in a fenced plain-text block.
+  Use [Trigger: ...], [Action 1: ...], | and v.
+  Wrap long labels onto short lines, about 32 characters each.
+  Do not use Mermaid, images, HTML or special rendering.
+- Below the diagram, give the full step names and a short explanation.
+- For field guidance, list each field separately in UI order.
+  Distinguish text to type from Dynamic content to insert.
+  Do not invent token names or force tokens where fixed text is enough.
+- Treat the output as an unverified design, not a working or approved flow.
+Do not ask for real messages, private URLs, credentials or raw run data.
+Wait for my scenario before proposing a flow.
+
+2. Send ONE scenario:
+
+Office supplies
+When someone submits an office-supply request form, I want to email the office coordinator and send the person a confirmation. How could I automate this?
+
+Weekly reminder (suggested starting choice)
+Every Monday morning, I want to email my team a reminder to update their task list and post the same reminder in Teams. How could I automate this?
+
+Document notification
+When a new file is added to a practice folder in OneDrive, I want to email the coordinator and notify the team in Teams. How could I automate this?
+
+Scenario assumptions: the form collects an item and requester email; confirmation means received, not approved. Use an existing practice Teams channel. For documents, use OneDrive for Business and notify with the file name only, without attachments or sharing links.
+
+3. Send each follow-up separately:
+
+Show me how I could create this flow in Power Automate, step by step. Name the trigger and actions, explain the main fields, and show what I would type versus insert from an earlier step. Use fictional examples. List anything I need prepared first. I am only planning today.
+
+Walk me through one fictional example from start to finish. What should happen at each step, and how would I check it when I build the flow later? Point out anything I should confirm with my instructor or IT team.
+
+4. Check one Trigger and two or three Actions. Explain a fictional walkthrough and an access requirement. Label your result: Design only - not built or tested.

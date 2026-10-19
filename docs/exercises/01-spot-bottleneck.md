@@ -3,66 +3,107 @@ prev:
   text: Back
   link: /preparation
 next:
-  text: Continue
+  text: Exercise 2 · Play the Flow-card challenges
   link: /exercises/02-arrange-flow-cards
 ---
 
 # Exercise 1 · Find a bottleneck
 
-![Colleagues map missing weekly-report information on a flipchart.](/images/find-bottleneck.png)
-
-**09:00–10:30 · Group activity**
+![Colleagues discuss a training-request process on a flipchart.](/images/find-bottleneck.png)
 
 ## Goal
-Choose one small improvement to a familiar process, with a person responsible for checking the result.
+Map a training request, match its business roles and choose one small improvement with a human checkpoint.
 
 ## What you need
 Flipchart, post-its and markers. No software account or paid licence.
 
-**Scenario:** A coordinator gathers weekly-report updates. Some updates are missing an item or completion date. They find the right colleague, write and check a request, send it, then wait for a reply. Similar requests are repeatedly retyped.
+**Scenario:** An internal training request includes a topic, date, participant count and business reason. It moves from submission through a details check, a register entry and a decision, then the outcome is communicated. Sometimes details are missing, information is copied again, or people ask for status while waiting.
 
 ## Steps
 
-### Practice 1 · Map the work
-Show how information moves between people.
+### Practice 1 · Map the work {#practice-1-·-map-the-work}
+![Colleagues arrange five blank process notes and arrows, without role markers.](/images/practice-01-01-training-request.webp)
 
-After the welcome (10 minutes) and foundations/demo (15 minutes), spend **25 minutes**:
+Recreate the five-step training-request flow on your flipchart.
 
-1. Draw the process in 5–7 steps, from finding missing information to receiving a reply.
-2. Use one post-it per step and arrows to show the order.
-3. Label the responsible role beside each step. Use roles, not real names.
-4. Walk through one fictional request together.
+```mermaid
+flowchart TD
+    A["Submit details"] --> B["Check required details"]
+    B --> C["Record request"]
+    C --> D["Approve or reject"]
+    D --> E["Notify requester"]
+```
 
-**Check your result:** A teammate can follow the map without extra explanation.
+1. Write each of the five steps on a separate post-it.
+2. Place them in the shown order and draw arrows between them.
+3. Follow one training request from submission to notification. Add role labels in the next practice.
 
-### Practice 2 · Find the friction
+**Check your result:** Your map has the five steps in order, with a clear start and finish.
+
+### Practice 2 · Match the roles {#practice-2-·-match-the-roles}
+![Colleagues discuss role markers beneath five blank process steps on a flipchart.](/images/practice-01-01-map-work.webp)
+
+Match the business roles to the steps on your map.
+
+Choose from this role bank:
+
+- **Requester**
+- **Coordinator**
+- **Manager**
+
+1. Discuss which role is responsible for each step.
+2. Write the role on a post-it and place it below the matching step. A role may appear more than once.
+3. Explain what information passes from one step to the next.
+4. Ask a teammate to follow the map and explain the handovers.
+
+**Check your result:** Every step has a role, and your group can explain why it fits.
+
+### Practice 3 · Find the bottleneck {#practice-2-·-find-the-bottleneck}
+![Colleagues mark two bottlenecks on their training-request process map.](/images/practice-01-02-find-friction.webp)
+
 Identify two places where work slows down or mistakes happen.
 
-Spend **20 minutes**:
+Discuss where the process becomes difficult:
 
-1. Mark at least two bottlenecks, such as retyping or an unclear request.
+1. Mark at least two bottlenecks, such as missing request details, repeated copying into the register, waiting for a decision or repeated status enquiries.
 2. Explain what causes each problem and who is affected.
-3. Note unknown deadlines or escalation rules as questions; do not invent policy.
+3. Write a possible cause of each bottleneck on a separate post-it. Attach it beside the affected step.
 
-**Check your result:** Each marked bottleneck has a reason.
+**Check your result:** Each marked bottleneck has a post-it explaining its possible cause.
 
-### Practice 3 · Choose one improvement
+### Practice 4 · Choose one improvement {#practice-3-·-choose-one-improvement}
+![Colleagues compare their training-request map with one small improvement and a human checkpoint.](/images/practice-01-03-choose-improvement.webp)
+
 Define a small automation-supported change with a human checkpoint.
 
-Spend **15 minutes**, then use the final **5 minutes** to reflect:
+Choose an improvement and reflect on what still needs human judgement:
 
 1. Choose one bottleneck to improve.
-2. Describe what could be repeated automatically and what still needs human judgement.
-3. Name the role that checks the requested item and recipient before sending.
+2. Describe one repeatable change, such as reusing a message asking for missing training details or reducing repeated copying.
+3. Name the role that checks the information and result. The manager keeps responsibility for approving or rejecting the request.
 4. Explain the expected improvement in one sentence.
 
-**Check your result:** Keep the group map, two bottleneck marks and one improvement with a named checking role.
+**Check your result:** Keep the five-step map with role labels, two bottleneck marks and one improvement with a named checking role.
+
+### Practice 5 · Invite the inquisitor {#practice-4-·-invite-the-inquisitor}
+![A visiting Inquisitor listens to a training-request improvement and signs the team’s flipchart.](/images/practice-01-04-invite-inquisitor.webp)
+
+Give your training-request improvement a friendly cross-team challenge.
+
+1. Choose one teammate as your **Inquisitor**.
+2. Send your Inquisitor to another team's flipchart.
+3. The host team explains the chosen bottleneck, the improvement and the human checkpoint.
+4. The Inquisitor chooses one curious question:
+   - **Why this improvement?**
+   - **What could go wrong?**
+   - **Who checks the result?**
+5. If the explanation is clear, the Inquisitor signs the flipchart. If not, improve the explanation and try again.
+6. Return to your team and welcome a visiting Inquisitor to your own flipchart.
+
+**Check your result:** Your flipchart has a visiting Inquisitor's signature, and your team can explain why the improvement is useful.
+
+The signature confirms that the explanation is clear. It does not prove technical feasibility or production readiness.
 
 ::: details Discussion help
-Ask: What is repeated? What information is needed? What could go wrong if no person checks? A flow is like a recipe: it repeats the steps you give it, but it cannot decide whether you chose the right meal.
+Ask: What is repeated? Which detail is missing? Where does the request wait? What needs a human decision? A flow is like a recipe: clear steps help work repeat, while a person checks whether the result is suitable.
 :::
-
-
-## Continue
-
-[Continue →](/exercises/02-arrange-flow-cards)

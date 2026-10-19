@@ -12,7 +12,13 @@ next:
 
 Find one repetitive task, explore a workflow with your group, then build and check a simple email flow yourself.
 
-[Get ready →](/preparation)
+<div class="course-hero-actions">
+
+[Get ready](/preparation)
+[View exercises](#your-learning-day)
+[Download slides (PDF)](/downloads/AXA-Batch3-Foundation-Training.pdf)
+
+</div>
 
 ## Your learning day
 
@@ -24,12 +30,12 @@ Find one repetitive task, explore a workflow with your group, then build and che
 | 12:00–13:00 | Lunch | |
 | 13:00–14:30 | [3 · Build an email flow](/exercises/03-build-information-request) | Two emails matching two inputs |
 | 14:30–14:45 | Break | |
-| 14:45–16:00 | [4 · Review with AI](/exercises/04-ai-coaching) | A verified check or an untested test plan |
+| 14:45–16:00 | [4 · Design a simple flow with AI](/exercises/04-ai-coaching) | A text diagram, build guidance and fictional walkthrough |
 
 ## How to use these pages
 
 Follow the main steps. Open the help boxes only when needed. **Predict → Try → Check**: say what should happen, try it once, then compare the actual result.
 
-Morning work is a group paper simulation. Afternoon completion means running your own flow and checking your own emails. Watching a demonstration is useful, but it is not individual hands-on completion.
+Morning work is a group paper simulation. In Exercise 3, completion means running your own flow and checking your own emails; watching a demonstration is not individual hands-on completion. Exercise 4 is design-only: use AI advice to plan a new flow, not build or run it.
 
 Use fictional information only. No printed worksheet is required.
